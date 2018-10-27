@@ -16,7 +16,7 @@
 
 body {
     background-color: #E5EEF5;
-    background: url('img/bg.jpg') center fixed no-repeat;
+    background: url('/img/bg.jpg') center fixed no-repeat;
     background-size: cover;
     height: 100vh;
     color: #584B53;
@@ -84,7 +84,7 @@ ul {
 .mainGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: 2fr 5fr .25fr;
 }
 
 .blue {
@@ -104,13 +104,13 @@ ul {
 .accentOne {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 10;
+    grid-row-start: 3;
 }
 
 .accentTwo {
     grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start: 10;
+    grid-row-start: 3;
 }
 
 .gameContainer {
