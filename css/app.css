@@ -41,30 +41,24 @@ h1 {
 
 .deck {
 	width: 85%;
-	background: #716F71;
-	padding: 1rem;
-	border-radius: 4px;
-	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	margin: 0 0 3em;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .deck .card {
 	height: 3.7rem;
 	width: 3.7rem;
 	margin: 0.2rem 0.2rem;
-	background: #141214;;
+	background: #EFEFEF;
 	font-size: 0;
 	color: #ffffff;
-	border-radius: 5px;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
 
 .deck .card img {
@@ -332,12 +326,12 @@ h1 {
 
 	.deck {
 		width: 660px;
-		height: 680px;
+		height: 450px;
 	}
 
 	.deck .card {
-		height: 125px;
-		width: 125px;
+		height: 140px;
+		width: 140px;
 	}
 
 	.popup {
