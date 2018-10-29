@@ -1,11 +1,11 @@
 @font-face {
     font-family: Plantagenet Cherokee;
-    src: url(fonts/Plantagenet_Cherokee.ttf);
+    src: url('/fonts/Plantagenet_Cherokee.ttf');
 }
 
 @font-face {
     font-family: Palatino;
-    src: url(fonts/Palatino.ttf);
+    src: url('/fonts/Palatino.ttf');
 }
 
 * {
