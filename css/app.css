@@ -49,16 +49,7 @@ h1 {
 }
 
 .deck .card {
-	height: 3.7rem;
-	width: 3.7rem;
-	margin: 0.2rem 0.2rem;
-	background: #EFEFEF;
-	font-size: 0;
-	color: #ffffff;
 	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .deck .card img {
@@ -81,7 +72,7 @@ h1 {
 
 .deck .card.show img, .deck .card.match img {
 	display: block;
-	width: 80%;
+	width: 70%;
 	height: auto;
 }
 
@@ -304,7 +295,7 @@ h1 {
 ***************************/
 
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
 	.deck {
 		width: 85%;
 	}
@@ -313,7 +304,7 @@ h1 {
 		height: 4.7rem;
 		width: 4.7rem;
 	}
-}
+} */
 
 
 /* For Tablets and larger screens
