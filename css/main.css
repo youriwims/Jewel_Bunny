@@ -84,7 +84,8 @@ ul {
 .mainGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr .5fr 5fr .25fr;
+    grid-template-rows: 2fr 1fr .5fr 5fr .5fr;
+    /* grid-template-rows: 1fr .5fr 1fr 1fr; Test this for design accuracy*/
 }
 
 .blue {
