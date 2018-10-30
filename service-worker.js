@@ -1,17 +1,17 @@
-var STATIC_CACHE = 'bunny-static-v1';
+var STATIC_CACHE = 'bunny-static-v3';
 var STATIC_FILES = [
   '/',
   '/index.html',
   '/js/main.js',
   '/js/app.js',
-  '/app.css',
-  'main.css',
-  '/jewel0.png',
-  '/jewel1.png',
-  '/jewel2.png',
-  '/jewel3.png',
-  '/jewel4.png',
-  '/jewel5.png',
+  'css/app.css',
+  'css/main.css',
+  'img/jewel0.png',
+  'img/jewel1.png',
+  'img/jewel2.png',
+  'img/jewel3.png',
+  'img/jewel4.png',
+  'img/jewel5.png',
   'img/jewelBunny.png',
   'fonts/Palatino.ttf',
   'fonts/Plantagenet_Cherokee.ttf'
