@@ -1,0 +1,20 @@
+{
+    "name": "Jewel Bunny Progressive Web Application",
+    "short_name": "Jewel Bunny PWA",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#E5EEF5",
+    "theme_color": "#584B53"
+}
