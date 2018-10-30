@@ -66,10 +66,6 @@ h1 {
 	animation-duration: .75s;
 }
 
-.deck .card.show {
-	font-size: 33px;
-}
-
 .deck .card.show img, .deck .card.match img {
 	display: block;
 	width: 70%;
@@ -96,7 +92,7 @@ h1 {
 
 .deck .card.disabled {
 	pointer-events: none;
-	opacity: 0.9;
+	opacity: 1;
 }
 
 
