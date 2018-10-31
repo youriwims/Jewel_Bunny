@@ -1,6 +1,6 @@
 // cards array holds all cards
 let card = document.getElementsByClassName("card");
-let cards = [...card]
+let cards = [...card];
 
 // deck of all cards in game
 const deck = document.getElementById("card-deck");
@@ -22,7 +22,7 @@ let starsList = document.querySelectorAll(".stars li");
 let closeicon = document.querySelector(".close");
 
 // declare modal
-let modal = document.getElementById("popup1")
+let modal = document.getElementById("popup1");
 
 // array for opened cards
 var openedCards = [];
@@ -43,7 +43,7 @@ function shuffle(array) {
     }
 
     return array;
-};
+}
 
 
 // @description shuffles cards when page is refreshed / loads
@@ -100,7 +100,7 @@ function cardOpen() {
             unmatched();
         }
     }
-};
+}
 
 
 // @description when cards match
@@ -214,7 +214,7 @@ function congratulations() {
 
         //closeicon on modal
         closeModal();
-    };
+    }
 }
 
 
@@ -240,4 +240,4 @@ for (var i = 0; i < cards.length; i++) {
     card.addEventListener("click", displayCard);
     card.addEventListener("click", cardOpen);
     card.addEventListener("click", congratulations);
-};
+}
