@@ -1,15 +1,17 @@
-# Jewel Bunny
+# Jewel Bunny Progressive Web Application(PWA)
 
 ## Objective
-* Design & build a simple PWA
-* Use the Fetch API to retrieve images
+* Design & build a simple PWA that: 
+    * Has an App Manifest
+    * Registers, Installs, and Avtivates a Service Worker
+    * Caches data for offline usage
 * Utilize JavaScript & jQuery to create a memory game
 
 __To view website mockups click [here.](https://www.youriwims.com/jewel-bunny/)__
 
 ## Skills
 1. HTML
-2. SASS
+2. SASS/CSS
 3. CSS Grid & Flexbox
 4. JavaScript & jQuery
 5. Progressive Web App (PWA)
