@@ -241,3 +241,11 @@ for (var i = 0; i < cards.length; i++) {
     card.addEventListener("click", cardOpen);
     card.addEventListener("click", congratulations);
 };
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/service-worker.js')
+        .then(function () {
+            console.log('Service Worker Registered');
+        });
+}
