@@ -1,0 +1,23 @@
+{
+  "name": "jewel_bunny",
+  "version": "1.0.0",
+  "description": "## Objective * Design & build a simple PWA that:      * Has an App Manifest     * Registers, Installs, and Activates a Service Worker     * Caches data for offline usage * Utilize JavaScript to create a memory game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youriwims/Jewel_Bunny.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youriwims/Jewel_Bunny/issues"
+  },
+  "homepage": "https://github.com/youriwims/Jewel_Bunny#readme",
+  "dependencies": {
+    "firebase": "^5.5.7",
+    "mocha": "^5.2.0"
+  }
+}
