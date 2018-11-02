@@ -1,4 +1,4 @@
-var STATIC_CACHE = 'bunny-static-v4';
+var STATIC_CACHE = 'bunny-static-v1';
 var STATIC_FILES = [
   '/',
   'manifest.json',
