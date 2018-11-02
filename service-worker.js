@@ -1,9 +1,8 @@
-var STATIC_CACHE = 'bunny-static-v3';
+var STATIC_CACHE = 'bunny-static-v1';
 var STATIC_FILES = [
   '/',
-  '/index.html',
-  '/js/main.js',
-  '/js/app.js',
+  'index.html',
+  'js/app.js',
   'css/app.css',
   'css/main.css',
   'img/jewel0.png',
@@ -17,21 +16,21 @@ var STATIC_FILES = [
   'fonts/Plantagenet_Cherokee.ttf'
 ];
 
-self.addEventListener('install', function(e) {
+self.addEventListener('install', function (e) {
   console.log('[ServiceWorker] Install');
   e.waitUntil(
-    caches.open(STATIC_CACHE).then(function(cache) {
+    caches.open(STATIC_CACHE).then(function (cache) {
       console.log('[ServiceWorker] Caching app shell');
       return cache.addAll(STATIC_FILES);
     })
   );
 });
 
-self.addEventListener('activate', function(e) {
+self.addEventListener('activate', function (e) {
   console.log('[ServiceWorker] Activate');
   e.waitUntil(
-    caches.keys().then(function(keyList) {
-      return Promise.all(keyList.map(function(key) {
+    caches.keys().then(function (keyList) {
+      return Promise.all(keyList.map(function (key) {
         if (key !== STATIC_CACHE) {
           console.log('[ServiceWorker] Removing old cache', key);
           return caches.delete(key);
@@ -42,10 +41,10 @@ self.addEventListener('activate', function(e) {
   return self.clients.claim();
 });
 
-self.addEventListener('fetch', function(e) {
+self.addEventListener('fetch', function (e) {
   console.log('[ServiceWorker] Fetch', e.request.url);
   e.respondWith(
-    caches.match(e.request).then(function(response) {
+    caches.match(e.request).then(function (response) {
       return response || fetch(e.request);
     })
   );
