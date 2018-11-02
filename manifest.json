@@ -11,31 +11,6 @@
             "src": "img/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
-        },
-        {
-            "src": "https://youriwims.github.io/img/jewel0.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        },
-        {
-            "src": "https://youriwims.github.io/img/jewel1.png",
-            "type": "image/png"
-        },
-        {
-            "src": "https://youriwims.github.io/img/jewel2.png",
-            "type": "image/png"
-        },
-        {
-            "src": "https://youriwims.github.io/img/jewel3.png",
-            "type": "image/png"
-        },
-        {
-            "src": "https://youriwims.github.io/img/jewel4.png",
-            "type": "image/png"
-        },
-        {
-            "src": "https://youriwims.github.io/img/jewel5.png",
-            "type": "image/png"
         }
     ],
     "start_url": "/index.html",
