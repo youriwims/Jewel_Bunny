@@ -1,65 +1,109 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!doctype html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
+    <title>Jewel Bunny</title>
+    <meta name="description" content="Jewel Bunny is a fun, yet simple memory game web application.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#E5EEF5">
+    <meta name="theme-color" content="#584B53">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.5.7/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.5.7/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.5.7/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.5.7/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.5.7/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<body class="mainGrid">
+    <header class="blue">
+        <img src="./img/jewelBunny.png" alt="Jewel Bunny Icon" title="Jewel Bunny" class="bunnyMain">
+        <h1>Jewel Bunny Memory <br> Matching Game</h1>
+    </header>
+    <aside class="white">
+        <h3>Instructions</h3>
+        <ol>
+            <li>Click on a square below.</li>
+            <li>Find the matching image pairs.</li>
+            <li>Good Luck & Have fun!</li>
+        </ol>
+        <button onclick=startGame()>Reset</button>
+    </aside>
+    <section class="score-panel">
+        <ul class="stars">
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+        <span class="moves">0</span> Move(s)
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        <div class="timer">
+        </div>
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    </section>
+    <div class="accentOne white"></div>
+    <div class="accentTwo blue"></div>
+    <main class="gameContainer">
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="red" id="card1">
+                <img src="./img/jewel0.png" id="myImage1" alt="Image of Jewel Number One">
+            </li>
+            <li class="card" type="purple">
+                <img src="./img/jewel1.png" id="myImage2" alt="Image of Jewel Number Two">
+            </li>
+            <li class="card match" type="orange">
+                <img src="./img/jewel2.png" id="myImage3" alt="Image of Jewel Number Three">
+            </li>
+            <li class="card" type="green">
+                <img src="./img/jewel3.png" id="myImage4" alt="Image of Jewel Number Four">
+            </li>
+            <li class="card" type="yellow">
+                <img src="./img/jewel4.png" id="myImage5" style="width: 60%;" alt="Image of Jewel Number Five">
+            </li>
+            <li class="card" type="blue">
+                <img src="./img/jewel5.png" id="myImage6" alt="Image of Jewel Number Six">
+            </li>
+            <li class="card" type="red">
+                <img src="./img/jewel0.png" id="myImage1" alt="Image of Jewel Number One">
+            </li>
+            <li class="card" type="purple">
+                <img src="./img/jewel1.png" id="myImage2" alt="Image of Jewel Number Two">
+            </li>
+            <li class="card match" type="orange">
+                <img src="./img/jewel2.png" id="myImage3" alt="Image of Jewel Number Three">
+            </li>
+            <li class="card" type="green">
+                <img src="./img/jewel3.png" id="myImage4" alt="Image of Jewel Number Four">
+            </li>
+            <li class="card" type="yellow">
+                <img src="./img/jewel4.png" id="myImage5" style="width: 60%;" alt="Image of Jewel Number Five">
+            </li>
+            <li class="card" type="blue">
+                <img src="./img/jewel5.png" id="myImage6" alt="Image of Jewel Number Six">
+            </li>
+        </ul>
+
+        <!-- <script src="js/main.js"></script> -->
+        <script src="js/app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCyo58EKfN8DSDICMLyyB5_yIlh5Sm_OqA",
+                authDomain: "jewel-bunny.firebaseapp.com",
+                databaseURL: "https://jewel-bunny.firebaseio.com",
+                projectId: "jewel-bunny",
+                storageBucket: "jewel-bunny.appspot.com",
+                messagingSenderId: "50663196842"
+            };
+            firebase.initializeApp(config);
+        </script>
+</body>
+
 </html>
