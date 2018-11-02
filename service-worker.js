@@ -1,10 +1,13 @@
-var STATIC_CACHE = 'bunny-static-v1';
+var STATIC_CACHE = 'bunny-static-v4';
 var STATIC_FILES = [
   '/',
+  'manifest.json',
   'index.html',
   'js/app.js',
   'css/app.css',
   'css/main.css',
+  'img/favicon.ico',
+  'img/bg.jpg',
   'img/jewel0.png',
   'img/jewel1.png',
   'img/jewel2.png',
