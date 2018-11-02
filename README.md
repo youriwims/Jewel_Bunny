@@ -5,7 +5,7 @@
     * Has an App Manifest
     * Registers, Installs, and Activates a Service Worker
     * Caches data for offline usage
-* Utilize JavaScript & jQuery to create a memory game
+* Utilize JavaScript to create a memory game
 
 __To view website mockups click [here.](https://www.youriwims.com/jewel-bunny/)__
 
