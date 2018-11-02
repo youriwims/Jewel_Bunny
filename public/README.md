@@ -21,4 +21,4 @@ __To view website mockups click [here.](https://www.youriwims.com/jewel-bunny/)_
 ### Resources
 * [How to Build a Memory Matching Game in JavaScript](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript) 
 
-#### Status: In Progress 
+#### Status: Complete 
