@@ -13,7 +13,7 @@ __To view website mockups click [here.](https://www.youriwims.com/jewel-bunny/)_
 1. HTML
 2. SASS/CSS
 3. CSS Grid & Flexbox
-4. JavaScript & jQuery
+4. JavaScript
 5. Progressive Web App (PWA)
 6. VS Code
 7. Adobe XD
