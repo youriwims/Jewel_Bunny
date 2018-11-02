@@ -3,7 +3,7 @@
 ## Objective
 * Design & build a simple PWA that: 
     * Has an App Manifest
-    * Registers, Installs, and Avtivates a Service Worker
+    * Registers, Installs, and Activates a Service Worker
     * Caches data for offline usage
 * Utilize JavaScript & jQuery to create a memory game
 
